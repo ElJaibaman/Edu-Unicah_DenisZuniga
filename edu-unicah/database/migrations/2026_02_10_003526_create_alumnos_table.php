@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('nombre');
             $table->string('direccion');
-            $table->string('correo');
-            $table->string('telefono');
+            $table->string('correo')->unique();
+            $table->string('telefono')->unique();
             $table->string('ncuenta')->unique();
-            $table->string('forma_ingreso')->unique();
+            $table->string('forma_ingreso')();
             $table->foreignId('carrera_id')->constrained('carreras')->onDelete('cascade');
             $table->foreignId('curso_id')->constrained('cursos')->onDelete('cascade');
             $table->timestamps();
