@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<h1> Hola desde Create Alumno </h1>
+<h1> Hola desde Edit Alumno </h1>
 </template>
 
 
